@@ -1,0 +1,287 @@
+body {
+    background-color: #F8EDEB;
+}
+
+header{
+    background-color: #ECD5C8;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.titre {   
+    font-family: "Dynalight", cursive;
+    background-image: url("../images/coucherdesoleil.jpg");
+    display: flex;
+    justify-content: center;   /* Centrage horizontal */
+    align-items: center;       /* Centrage vertical */
+    height: 200px;             /* Il faut une hauteur */
+    text-align: center;        /* Pour le texte du h1 si tu veux aussi */
+    background-size: cover;
+    background-position: center;
+    font-size: 50px;
+}
+
+.description {
+    font-family: 'Lora' serif;
+    font-weight: 700;
+    font-style: bold, italic;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    text-align : center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+/*    background-color: #D4A5A5; */
+    
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    
+}
+.galerie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+    border-radius: 30px;
+    margin: 8px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #BFA6A0;
+    font-family: "Quicksand", sans-serif ;
+    justify-content: start;
+    height: 100%;
+    overflow: hidden;    
+    text-align: center;
+}
+
+.galerie-item p{
+    padding: 0 10px 15px;
+    text-align: justify;
+    font-size: 0.95em;
+}
+
+.galerie-item:hover{
+    transform: scale(1.03);
+}
+
+.galerie-img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius : 30px;
+    border-top-right-radius : 30px;
+}
+
+h2 {
+    font-family: 'Poppins' sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+h3 {
+    font-family: 'Poppins' sans-serif;   
+}
+
+/*carrousel*/
+.carrousel {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* La fenêtre qui cache les débordements */
+.viewport {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Bande coulissante */
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+/* Chaque slide = 100% du carrousel */
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  background-color: #f8edeb;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#slide1:checked ~ .viewport .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .viewport .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .viewport .slides {
+  transform: translateX(-200%);
+}
+
+.nav-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.nav-dots label {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+input#slide1:checked ~ .nav-dots label[for="slide1"],
+input#slide2:checked ~ .nav-dots label[for="slide2"],
+input#slide3:checked ~ .nav-dots label[for="slide3"] {
+  background-color: #bfa6a0;
+}
+
+.carrousel {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* La fenêtre qui cache les débordements */
+.viewport {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Bande coulissante */
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+/* Chaque slide = 100% du carrousel */
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  background-color: #f8edeb;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#slide1:checked ~ .viewport .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .viewport .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .viewport .slides {
+  transform: translateX(-200%);
+}
+
+.nav-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.nav-dots label {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+input#slide1:checked ~ .nav-dots label[for="slide1"],
+input#slide2:checked ~ .nav-dots label[for="slide2"],
+input#slide3:checked ~ .nav-dots label[for="slide3"] {
+  background-color: #bfa6a0;
+}
+
+.contact-galerie {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 6px;
+    margin: 6px;
+    background-color: #ECD5C8;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-img {
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .titre {
+        height: 150px;
+        padding: 10px;
+        font-size: 1.5em;
+    }    
+    h1{
+        font-size: 1.8em;
+    }
+    .description{
+        font-size: 1em;
+        margin: 10px;
+        padding: 10px;
+        max-width: 90%;
+    }
+    .descprition p{
+        text-align: center;
+    }
+    .galerie{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    blockquote{
+        font-size: 1,5em;
+        margin-left: -15px;
+    
+    }
+}
