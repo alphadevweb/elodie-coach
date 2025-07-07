@@ -11,7 +11,7 @@ Ce site a pour objectif :
 
 ## 📸 Aperçu
 
-👉 [Voir le site en ligne](https://alphadevweb.github.io/elodie-coach/)
+👉 [Voir le site en ligne](https://alphadevweb.github.io/elodie-coach/index.html)
 
 ## 🛠️ Technologies utilisées
 
