@@ -305,6 +305,7 @@ input#slide3:checked ~ .nav-dots label[for="slide3"] {
         flex-wrap: wrap;
     }
     blockquote{
+        max-width: 300px;
         flex : 160px; 
         font-size: 1,5em;
         margin-left: -15px;
@@ -321,5 +322,20 @@ input#slide3:checked ~ .nav-dots label[for="slide3"] {
     .contact{
         font-size: 0.9em;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    slide{
+        max-width: 220px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    blockquote{
+        max-width: 300px;
+        flex : 1 1 100px; 
+        font-size: 1.5em;
+        margin-left: -15px;
+        word-wrap: break-word;
     }
 }
