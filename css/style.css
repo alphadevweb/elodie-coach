@@ -107,7 +107,9 @@ input[type="radio"] {
 .slides {
   display: flex;
   width: 300%;
-  transition: transform 0.5s ease;
+  transition: transform 0.8s ease-in-out;
+  will-change: transform;
+
 }
 
 /* Chaque slide = 100% du carrousel */
@@ -235,6 +237,11 @@ input#slide3:checked ~ .nav-dots label[for="slide3"] {
   background-color: #bfa6a0;
 }
 
+.carrousel-img{
+    height: 25px;
+    width: 25px;
+}
+
 .contact-galerie {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -252,6 +259,7 @@ input#slide3:checked ~ .nav-dots label[for="slide3"] {
 }
 
 .contact-img {
+    margin-bottom: -20px;
     width: 50px;
     height: 50px;
 }
@@ -265,6 +273,7 @@ input#slide3:checked ~ .nav-dots label[for="slide3"] {
     }    
     h1{
         font-size: 1.8em;
+        text-shadow: 2px 2px 4px cornsilk;
     }
     .description{
         font-size: 1em;
@@ -277,11 +286,40 @@ input#slide3:checked ~ .nav-dots label[for="slide3"] {
     }
     .galerie{
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 45px;
+    }
+    .sous-titre{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sous-titre1{
+        flex: 100px;
+        margin: 10px;
+    }
+    h2 {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    slide{
+        display: flex;
+        flex-wrap: wrap;
     }
     blockquote{
+        flex : 160px; 
         font-size: 1,5em;
         margin-left: -15px;
     
+    }
+    .carrousel-img{
+    height: 20px;
+    width: 20px;
+}
+    .contact-img {
+        width: 40px;
+        height: 40px;
+    }
+    .contact{
+        font-size: 0.9em;
+        text-align: center;
     }
 }
