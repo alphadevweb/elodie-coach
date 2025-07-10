@@ -272,7 +272,7 @@ input#slide3:checked ~ .nav-dots label[for="slide3"] {
         font-size: 1.5em;
     }    
     h1{
-        font-size: 1.8em;
+        font-size: 2.5em;
         text-shadow: 2px 2px 4px cornsilk;
     }
     .description{
